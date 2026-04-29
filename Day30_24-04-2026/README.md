@@ -32,15 +32,15 @@ This project demonstrates a fundamental backend pipeline:
 
 Client → JSON Request
 
-&#x20;       ↓
+       ↓
 
 Server → Convert to Object
 
-&#x20;       ↓
+       ↓
 
 Business Logic (price +10%)
 
-&#x20;       ↓
+       ↓
 
 Response → JSON
 
@@ -64,9 +64,9 @@ Response → JSON
 
 {
 
-&#x20; "name": "Product A",
+ "name": "Product A",
 
-&#x20; "price": 100
+ "price": 100
 
 }
 
@@ -92,9 +92,9 @@ Response → JSON
 
 {
 
-&#x20; "name": "Product A",
+ "name": "Product A",
 
-&#x20; "price": 110
+ "price": 110
 
 }
 
