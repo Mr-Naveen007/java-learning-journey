@@ -1,4 +1,4 @@
-package org.example;
+package com.naveen.backend;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -11,6 +11,6 @@ public class JsonToJava {
 
         User user = mapper.readValue(json, User.class);
 
-        System.out.println(user.name);
+        System.out.println(user.getName()); // correct
     }
 }

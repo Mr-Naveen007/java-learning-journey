@@ -11,7 +11,7 @@ public class Main {
         Product product = mapper.readValue(requestJson, Product.class);
 
         // 2. BUSINESS LOGIC (THIS IS WHERE YOUR 10% GOES)
-        product.price = product.price * 1.1;
+        product.setPrice(product.getPrice() * 1.1);
 
         // 3. Object → JSON (response)
         return mapper.writeValueAsString(product);

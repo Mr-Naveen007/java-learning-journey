@@ -1,4 +1,4 @@
-package org.example;
+package com.naveen.backend;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
