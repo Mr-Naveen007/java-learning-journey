@@ -1,12 +1,15 @@
 package com.naveen.backend.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonProperty;
 
 @JsonIgnoreProperties(ignoreUnknown = true)
 public class GitHubUser {
 
     private String login;
-    private int public_repos;
+
+    @JsonProperty("public_repos")
+    private int publicRepos;
 
     public GitHubUser() {
     }
@@ -19,11 +22,11 @@ public class GitHubUser {
         this.login = login;
     }
 
-    public int getPublic_repos() {
-        return public_repos;
+    public int getPublicRepos() {
+        return publicRepos;
     }
 
-    public void setPublic_repos(int public_repos) {
-        this.public_repos = public_repos;
+    public void setPublicRepos(int publicRepos) {
+        this.publicRepos = publicRepos;
     }
 }

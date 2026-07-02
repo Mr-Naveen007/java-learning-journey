@@ -17,23 +17,27 @@ public class Main {
                 .uri(URI.create("https://api.github.com/users/Mr-Naveen007"))
                 .build();
 
-        HttpResponse<String> response =
-                client.send(request,
-                        HttpResponse.BodyHandlers.ofString());
-
-        String json = response.body();
+        HttpResponse<String> response = client.send(
+                request,
+                HttpResponse.BodyHandlers.ofString()
+        );
 
         ObjectMapper mapper = new ObjectMapper();
 
-        GitHubUser user =
-                mapper.readValue(json, GitHubUser.class);
+        GitHubUser user = mapper.readValue(
+                response.body(),
+                GitHubUser.class
+        );
 
-        System.out.println(user.getLogin());
-        System.out.println(user.getPublic_repos());
+        System.out.println("<-- GitHub User Details -->");
+        System.out.println("Username     : " + user.getLogin());
+        System.out.println("Public Repos : " + user.getPublicRepos());
 
-        String convertedJson =
-                mapper.writeValueAsString(user);
+        String convertedJson = mapper
+                .writerWithDefaultPrettyPrinter()
+                .writeValueAsString(user);
 
+        System.out.println("\n<-- Converted JSON -->");
         System.out.println(convertedJson);
     }
 }
