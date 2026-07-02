@@ -29,7 +29,7 @@ public class Main {
                 GitHubUser.class
         );
 
-        System.out.println("<-- GitHub User Details -->");
+        System.out.println("<- GitHub User Details ->");
         System.out.println("Username     : " + user.getLogin());
         System.out.println("Public Repos : " + user.getPublicRepos());
 
@@ -37,7 +37,7 @@ public class Main {
                 .writerWithDefaultPrettyPrinter()
                 .writeValueAsString(user);
 
-        System.out.println("\n<-- Converted JSON -->");
+        System.out.println("\n<- Converted JSON ->");
         System.out.println(convertedJson);
     }
 }
