@@ -1,5 +1,3 @@
-Absolutely. Here's a clean GitHub-ready README for **Day 33**:
-
 # 🔓 DAY 33 — NESTED JSON MAPPING & COLLECTIONS
 
 ## 📚 Topic
