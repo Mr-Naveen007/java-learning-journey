@@ -1,4 +1,4 @@
-\# Day 31 — HTTP + Real API (Java)
+\# Day 31 — HTTP + Real API (Java).
 
 
 
