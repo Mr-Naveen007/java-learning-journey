@@ -31,7 +31,7 @@ public class Main {
         System.out.println(subtract.calculate(10, 5));
 
         // Calling default method
-        add.showType();
+        add.showType(); // It can also be multiply or subtract
 
         // Calling static method
         Calculator.info();
